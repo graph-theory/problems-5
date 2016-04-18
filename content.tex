@@ -1,6 +1,6 @@
 %!TEX root = problems.tex
 
-%\printanswers
+\printanswers
 
 \begin{questions}
 
@@ -308,14 +308,14 @@ Draw a decision tree for bubble sort with three elements.~\cite{biggs02}
   \node (e) at (2,3) {$x_1 < x_2$};
   \node (f) at (6,3) {$x_1 < x_2$};
   \node (g) at (9,3) {$x_1 < x_2$};
-  \node (h) at (-2,1.5) {$x_2 x_1 x_3$};
+  \node (h) at (-2,1.5) {$a_1 a_2 a_3$};
   \node (i) at (-0.125,1.5) {X};
-  \node (j) at (1,1.5) {$x_2 x_3 x_1$};
-  \node (k) at (3,1.5) {$x_3 x_2 x_1$};
-  \node (l) at (5,1.5) {$x_1 x_2 x_3$};
+  \node (j) at (1,1.5) {$a_1 a_3 a_2$};
+  \node (k) at (3,1.5) {$a_3 a_1 a_2$};
+  \node (l) at (5,1.5) {$a_2 a_1 a_3$};
   \node (m) at (6.75,1.5) {X};
-  \node (n) at (8,1.5) {$x_1 x_3 x_2$};
-  \node (o) at (10,1.5) {$x_3 x_1 x_2$};
+  \node (n) at (8,1.5) {$a_2 a_3 a_1$};
+  \node (o) at (10,1.5) {$a_3 a_2 a_1$};
   \end{scope}
   \begin{scope}[every edge/.style={draw=black,thick}]
   \path (a) edge node[above left] {\small $y$} (b);
