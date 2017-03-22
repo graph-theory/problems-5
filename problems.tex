@@ -1,4 +1,4 @@
-\documentclass[addpoints,12pt]{exam}
+\documentclass[a4paper, 12pt]{exam}
 
 \makeatletter
 \expandafter\providecommand\expandafter*\csname ver@framed.sty\endcsname
@@ -21,12 +21,6 @@
 \usepackage[hidelinks]{hyperref}
 \usetikzlibrary{mindmap,shadows, shapes, arrows, positioning}
 
-\tikzstyle{rect} = [rectangle, fill=ProcessBlue, text width=4.5em, text centered, minimum height=4em, rounded corners]
-\tikzstyle{line} = [draw, ->, very thick]
-\tikzstyle{oval} = [ellipse, fill=SeaGreen, text width=5em, text centered]
-
-\newcolumntype{x}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}}
-
 \renewcommand{\refname}{\selectfont\normalsize References} 
 \pagestyle{headandfoot}
 
@@ -40,14 +34,13 @@
 
 \begin{document}
 
-%\printanswers
+\printanswers
 
 \begin{questions}
 
-
-
 \question
-Construct all (non-isomorphic) rooted trees of heights from one to four, that have five vertices.~\cite{biggs02}. Note that there is one of height one, four of height two, three of height three, and one of height four.
+Construct all (non-isomorphic) rooted trees of heights from one to four, that have five vertices~\cite{biggs02}.
+Note that there is one of height one, four of height two, three of height three, and one of height four.
 \begin{solution}
 
 \begin{center}
@@ -281,10 +274,10 @@ Construct two non-isomorphic rooted trees both having twelve vertices, six leave
 \end{solution}
 
 \question
-Calculate the minimum height of a ternary rooted tree with ten leaves.
+Calculate the minimum height of a ternary rooted tree with eleven leaves.
 \begin{solution}
 We have that $h \leq  \log_m l$.
-Now, $\log_3 10 \approx 2.096$.
+Now, $\log_3 11 \approx 2.18$.
 Since the minimum height must be a natural number, and this is a lower bound, we have that the minimum height is 3.
 \end{solution}
 
@@ -299,10 +292,10 @@ Sketch all sixteen distinct spanning trees of the complete graph $K_4$.
 \question
 Draw evaluation trees representing each of the following reverse Polish notation expressions.
   \begin{parts}
-    \part $3$ $5$ $+$
-    \part $3$ $5$ $+$ $6$ $\times$
-    \part $3$ $5$ $+$ $6$ $4$ $-$ $\div$
-    \part $100$ $16$ $2$ $\times$ $+$ $11$ $3$ $\times$ $\div$ $75$ $\times$
+    \part $3$ $4$ $+$
+    \part $3$ $4$ $+$ $5$ $\times$
+    \part $4$ $6$ $-$ $4$ $6$ $+$ $\div$
+    \part $11$ $3$ $\times$ $100$ $16$ $2$ $\times$ $+$ $\div$ $75$ $\times$
   \end{parts}
 
 
