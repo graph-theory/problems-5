@@ -86,7 +86,7 @@
 \end{coverpages}
 
 % Print answers
-%\printanswers
+\printanswers
 
 \begin{document}
 
@@ -327,9 +327,10 @@
   Calculate the minimum height of a ternary rooted tree with eleven leaves.
 
   \begin{solution}
-    We have that $h \leq  \log_m l$.
+    We have that $h \geq \log_m l$.
     Now, $\log_3 11 \approx 2.18$.
     Since the minimum height must be a natural number, and this is a lower bound, we have that the minimum height is 3.
+    Such a tree exists.
   \end{solution}
 
 
